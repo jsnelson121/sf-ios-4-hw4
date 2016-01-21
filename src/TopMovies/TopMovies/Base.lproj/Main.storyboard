@@ -74,6 +74,7 @@
                                             <outlet property="directorLabel" destination="Ggt-aP-ez1" id="fCD-Ge-l90"/>
                                             <outlet property="posterView" destination="Kwn-GL-Z5z" id="rSs-OH-a21"/>
                                             <outlet property="titleLabel" destination="ZSF-tE-jw8" id="x9g-Ep-dxl"/>
+                                            <segue destination="UmB-MY-kVW" kind="show" id="Fj4-e7-JYB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -96,47 +97,47 @@
             </objects>
             <point key="canvasLocation" x="368" y="39"/>
         </scene>
-        <!--Random Movie View Controller-->
+        <!--Movie Detail View Controller-->
         <scene sceneID="IIV-y5-9vU">
             <objects>
-                <viewController id="UmB-MY-kVW" customClass="RandomMovieViewController" customModule="__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UmB-MY-kVW" customClass="MovieDetailViewController" customModule="__" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0at-UR-cTX"/>
                         <viewControllerLayoutGuide type="bottom" id="hEJ-rP-OM2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6pi-k3-xIb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f6s-Ow-0Xg">
-                                <rect key="frame" x="20" y="76" width="560" height="400"/>
+                                <rect key="frame" x="16" y="76" width="288" height="421"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SamplePoster" translatesAutoresizingMaskIntoConstraints="NO" id="34H-5Z-g7I">
-                                        <rect key="frame" x="190" y="0.0" width="180" height="267"/>
+                                        <rect key="frame" x="54" y="0.0" width="180" height="267"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="180" id="FdO-gG-LMe"/>
                                             <constraint firstAttribute="width" secondItem="34H-5Z-g7I" secondAttribute="height" multiplier="0.675:1" id="XFl-U6-PSw"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Die Hard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e22-dm-thQ">
-                                        <rect key="frame" x="247" y="275" width="66" height="20"/>
+                                        <rect key="frame" x="111" y="275" width="66" height="19.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hl-aM-9qr">
-                                        <rect key="frame" x="254" y="303" width="53" height="17"/>
+                                        <rect key="frame" x="118" y="302" width="52.5" height="17"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is going to be a lengthy movie summary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3O-Zz-Khm">
-                                        <rect key="frame" x="119" y="328" width="323" height="20"/>
+                                        <rect key="frame" x="16" y="327" width="255.5" height="40.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaO-0l-uld">
-                                        <rect key="frame" x="195" y="355" width="170" height="45"/>
+                                        <rect key="frame" x="59" y="376" width="170" height="45"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="Change Movie"/>
                                         <connections>

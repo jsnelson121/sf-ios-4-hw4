@@ -25,7 +25,7 @@
 
 import UIKit
 
-class RandomMovieViewController: UIViewController {
+class MovieDetailViewController: UIViewController {
     
     //
     // Put IBOutlets Below This Line
@@ -40,11 +40,11 @@ class RandomMovieViewController: UIViewController {
     // Put IBOutlets Above This Line
     //
     
-    var movies: [NSDictionary]?
+    //var movies: [NSDictionary]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         self.title = "🔝🎞"
         
         let itunesURL = NSURL(string: "https://itunes.apple.com/us/rss/topmovies/limit=100/json")!
@@ -56,13 +56,14 @@ class RandomMovieViewController: UIViewController {
                 print("Yay! The Movies Downloaded! 🎉")
             }
         }.resume()
+        */
     }
     
     //
     // Put IBAction Below This Line
     //
     
-    
+    /*
     @IBAction func didTapChangeMovieButton(sender: AnyObject) {
         let max = self.movies!.count - 1
         
@@ -84,11 +85,12 @@ class RandomMovieViewController: UIViewController {
         
         self.posterImageView?.setImageWithURL(posterImageURL)
     }
+    */
     
     //
     // Put IBAction Above This Line
     //
-    
+    /*
     func titleStringForMovieAtIndex(index: Int) -> String? {
         let movie = self.movies?[index]
         let title = movie?.valueForKeyPath("im:name.label") as? String
@@ -119,4 +121,5 @@ class RandomMovieViewController: UIViewController {
         let randomNumber = Int(arc4random_uniform(UInt32((max - min) + 1))) + min
         return randomNumber
     }
+    */
 }
